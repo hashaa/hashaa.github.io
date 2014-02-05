@@ -38,7 +38,7 @@ Open sets and topology</span></h2>
 <ol>
 <li><span style="font-family: Georgia, Times New Roman, serif;">The empty set $\emptyset$ and $X$ are elements of $T$.&nbsp;</span></li>
 <li><span style="font-family: Georgia, Times New Roman, serif;">Arbitrary (ﬁnite or inﬁnite) unions $\cup_\alpha U_\alpha$ of elements $U_{\alpha}$of T belong to $T$ (or equivalently, $T$ is stable by arbitrary unions).</span></li>
-<li><span style="font-family: Georgia, Times New Roman, serif;">Any ﬁnite intersection $\cap U_\alpha$ of elements $U_\alpha$ of $T$ is in $T$ (or equivalently, T is stable by ﬁnite intersection).</span></li>
+<li><span style="font-family: Georgia, Times New Roman, serif;">Any ﬁnite intersection $$ of elements of T is in T (or equivalently, T is stable by ﬁnite intersection).</span></li>
 </ol>
 <span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
 <span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #351c75;">Deﬁnition</span>&nbsp;</b>Set $X$ with a given topology deﬁned on it, i.e. the pair $(X, T)$, is a<b><span style="color: blue;"> <i>topological space</i></span></b>.</span><br />
@@ -49,11 +49,41 @@ Open sets and topology</span></h2>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">the trivial topology $T_t = \{\emptyset, X\}$;&nbsp;</span></li>
 <li><span style="font-family: Georgia, Times New Roman, serif;">the discrete topology $T_d =\{2^X,X\}$.</span></li>
 </ul>
-<span style="font-family: Georgia, 'Times New Roman', serif;">We notice that in the case of the discrete topology every subset of $(X, T_d)$ is open.</span><br /><ol>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set $N$ is called a <span style="color: blue;"><i><b>neighborhood</b></i></span> of a point $x\in (X, T)$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">if there exists an open set $O\in T$ such that $x\in O$ and $O\in N$. The set of neighborhoods of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">is noted $N(x)$.</span></li>
+<span style="font-family: Georgia, 'Times New Roman', serif;">We notice that in the case of the discrete topology every subset of $(X, T_d)$ is open.</span><br />
+<ol>
+<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set $N$ is called a <span style="color: blue;"><i><b>neighborhood</b></i></span> of a point $x\in (X, T)$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">if there exists an open set $O\in T$ such that $x\in O$ and $\O\in N$. The set of neighborhoods of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">is noted $N(x)$.</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point x ∈ (X, T) is called a <i><b style="background-color: white;"><span style="color: blue;">contact point</span></b></i> of a set $A$ if every neighborhood of $x$ </span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of $A$;</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point&nbsp;$x\in (X, T)$&nbsp;is called a <i><b><span style="color: blue;">limit point</span></b></i> of a set $A$ if every neighborhood of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of A diﬀerent of $x$.</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">The set of all contact points of a set $A$ is called the <span style="color: blue;"><i><b>closure</b></i></span> of $A$, denoted by $\bar{A}$</span></li>
+<li><span style="font-family: Georgia, 'Times New Roman', serif;">The largest open set contained in a given set $A$ is called the <b><i><span style="color: blue;">interior</span></i></b> of $A$.</span></li>
+</ol>
+<span style="font-family: Georgia, Times New Roman, serif;"><div>
+<b><span style="color: #4c1130;">Theorem 1</span></b> Let $A$ be a subset of a topological space $(X, T)$. Then</div>
+<div>
+<ol>
+<li>$ A\subset \bar{A}$,</li>
+<li>$\bar{\bar{A}} = \bar{A}$,</li>
+<li>if $B\subset A$, then $B\subset \bar{A}$,</li>
+<li>&nbsp;for all $A, B \in X$, $\bar{A \cup B} =\bar{ A}\cup\bar{B}$.</li>
+</ol>
+<h3>
+1.2 Comparison of topologies</h3>
+<div>
+<span style="color: #20124d;">Deﬁnition </span>Let $T_1$ and $T_2$ be two topologies deﬁned in the same set $X$. Then the topology $T_1$ is <i><span style="color: blue;"><b>stronger</b></span></i> than the topology $T_2$ if $T_2 \subset T_1$, i.e., if every set of the system $T_2$ is in a set of the system $T_1$.</div>
+<div>
+Let $\tau$ be the set of all topologies in $X$. Then for all $T\in\tau$ $T_t \subset T\subset T$d$</div>
+<div>
+<b><span style="color: #4c1130;">Theorem 2</span></b> Let $\{T_\alpha\}$ be any set of topologies in $X$. Then the intersection $T = \cap_\alpha T_\alpha$ is also a topology in $X$.</div>
+<div>
+<br /></div>
+<div>
+<b><span style="color: #b45f06;">Corollary 1</span></b> Let $A$ be any system of subsets of a set $X$. Then there exists a minimal topology in $X$ containing $A$, i.e., a topology $T(A)$ containing A and contained in every topology containing $A$.</div>
+<div>
+<br /></div>
+<div>
+<b><span style="color: #20124d;">Deﬁnition</span></b>&nbsp;Let $\mathcal{A}$ be a system of subsets of $X$ and $A$ a ﬁxed subset of $X$. Then the system $\mathcal{A}_A$ consisting of all subsets of $X$ of the form $A\cap B$, $ B\in \mathcal{A}$ is called the <b><i><span style="color: blue;">trace</span></i></b> of the system $\mathcal{A}$ on the set $A$.</div>
+</div>
+</span><ol>
 </ol>
 
 </body>
