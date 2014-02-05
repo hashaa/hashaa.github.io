@@ -24,9 +24,7 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-      
-  <h2>
+      <section id="main_content" class="inner"><h2>
 <span style="font-family: Georgia, Times New Roman, serif;">
 Open sets and topology</span></h2>
 <h3>
@@ -51,14 +49,16 @@ Open sets and topology</span></h2>
 </ul>
 <span style="font-family: Georgia, 'Times New Roman', serif;">We notice that in the case of the discrete topology every subset of $(X, T_d)$ is open.</span><br />
 <ol>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set $N$ is called a <span style="color: blue;"><i><b>neighborhood</b></i></span> of a point $x\in (X, T)$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">if there exists an open set $O\in T$ such that $x\in O$ and $\O\in N$. The set of neighborhoods of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">is noted $N(x)$.</span></li>
+<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set $N$ is called a <span style="color: blue;"><i><b>neighborhood</b></i></span> of a point $x\in (X, T)$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">if there exists an open set $O\in T$ such that $x\in O$ and $O\in N$. The set of neighborhoods of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">is noted $N(x)$.</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point x ∈ (X, T) is called a <i><b style="background-color: white;"><span style="color: blue;">contact point</span></b></i> of a set $A$ if every neighborhood of $x$ </span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of $A$;</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point&nbsp;$x\in (X, T)$&nbsp;is called a <i><b><span style="color: blue;">limit point</span></b></i> of a set $A$ if every neighborhood of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of A diﬀerent of $x$.</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">The set of all contact points of a set $A$ is called the <span style="color: blue;"><i><b>closure</b></i></span> of $A$, denoted by $\bar{A}$</span></li>
 <li><span style="font-family: Georgia, 'Times New Roman', serif;">The largest open set contained in a given set $A$ is called the <b><i><span style="color: blue;">interior</span></i></b> of $A$.</span></li>
 </ol>
-<span style="font-family: Georgia, Times New Roman, serif;"><div>
-<b><span style="color: #4c1130;">Theorem 1</span></b> Let $A$ be a subset of a topological space $(X, T)$. Then</div>
+<span style="font-family: Georgia, Times New Roman, serif;"></span><br />
+<div>
+<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #4c1130;">Theorem 1</span></b> Let $A$ be a subset of a topological space $(X, T)$. Then</span></div>
+<span style="font-family: Georgia, Times New Roman, serif;">
 <div>
 <ol>
 <li>$ A\subset \bar{A}$,</li>
@@ -71,7 +71,7 @@ Open sets and topology</span></h2>
 <div>
 <span style="color: #20124d;">Deﬁnition </span>Let $T_1$ and $T_2$ be two topologies deﬁned in the same set $X$. Then the topology $T_1$ is <i><span style="color: blue;"><b>stronger</b></span></i> than the topology $T_2$ if $T_2 \subset T_1$, i.e., if every set of the system $T_2$ is in a set of the system $T_1$.</div>
 <div>
-Let $\tau$ be the set of all topologies in $X$. Then for all $T\in\tau$ $T_t \subset T\subset T$d$</div>
+Let $\tau$ be the set of all topologies in $X$. Then for all $T\in\tau$, $T_t \subset T\subset T$</div>
 <div>
 <b><span style="color: #4c1130;">Theorem 2</span></b> Let $\{T_\alpha\}$ be any set of topologies in $X$. Then the intersection $T = \cap_\alpha T_\alpha$ is also a topology in $X$.</div>
 <div>
@@ -81,9 +81,20 @@ Let $\tau$ be the set of all topologies in $X$. Then for all $T\in\tau$ $T_t \su
 <div>
 <br /></div>
 <div>
-<b><span style="color: #20124d;">Deﬁnition</span></b>&nbsp;Let $\mathcal{A}$ be a system of subsets of $X$ and $A$ a ﬁxed subset of $X$. Then the system $\mathcal{A}_A$ consisting of all subsets of $X$ of the form $A\cap B$, $ B\in \mathcal{A}$ is called the <b><i><span style="color: blue;">trace</span></i></b> of the system $\mathcal{A}$ on the set $A$.</div>
+<b><span style="color: #20124d;">Deﬁnition</span></b>&nbsp;Let $\mathcal{A}$ be a system of subsets of $X$ and $A$ a ﬁxed subset of $X$. Then the system $\mathcal{A}_A$ consisting of all subsets of $X$ of the form $A\cap B$, $ B\in \mathcal{A}$ is called the <b><i><span style="color: blue;">trace</span></i></b> of the system $\mathcal{A}$ on the set $A$.<br />
+<br />
+<b><span style="color: #20124d;">Deﬁnition&nbsp;</span></b>Let $(X, T_X)$ and $(Y, T_Y )$ be two topological spaces. The <b><i><span style="color: blue;">product topology</span></i></b> in $X\timesY$, denoted $T = T_X \otimes T_Y , is deﬁned by calling $U\subset X \times Y$ open if<br />
+$$\forall x, y\in U, \exists V \in T_X\text{ and }W \in T_Y\text{ such that }x\in V, y \in W \text{ and } V \times W subset U.$$<br />
+<br />
+<h3>
+1.3 Dense subsets and connected topological spaces</h3>
+<b><span style="color: #cc0000;">Deﬁnition</span></b> Let $A$ and $B$ be two subsets of a topological space $(X, T)$ with the induced topologies. Then $A$ is said to be dense in $B$ if $B\subset \bar{A}$ with respect to the induced topology in $B$. In particular, $A$ is said to be <b><i><span style="color: blue;">dense</span></i></b> in $X$ if $\bar{A} = X$. A set $A$ is said to be <b><span style="color: blue;"><i>nowhere dense</i></span></b> if it is dense in no (open) set at all.<br />
+<br />
+<b><span style="color: red;">Deﬁnition</span></b>&nbsp;$A$ topological space $(X, T)$ is said to be <b><i><span style="color: blue;">connected</span></i></b> if it has no subsets other than $\emptyset$ and $X$ which are both open and closed.<br />
+<br /></div>
 </div>
-</span><ol>
+</span><br />
+<ol>
 </ol>
 
 </body>
