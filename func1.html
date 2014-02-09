@@ -1,107 +1,1346 @@
+
+
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Дашцэрэн Хашбаатар" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title></title>Dashtseren Khashbaatar</title>
-    <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Asset Pricing [Part 2a : Sketching The Traditional Framework] | Alpha Hive ::</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://alphahive.wordpress.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://s0.wp.com/wp-content/themes/pub/blogum/js/html5.js?m=1315596887g" type="text/javascript"></script>
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Alpha Hive :: &raquo; Feed" href="http://alphahive.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Alpha Hive :: &raquo; Comments Feed" href="http://alphahive.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Alpha Hive :: &raquo; Asset Pricing [Part 2a : Sketching The Traditional Framework] Comments Feed" href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
 </script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/_static/??-eJyNkdFuwyAMRX+o1Ko6tcrDtG8hwSG0BqNgFOXvR+ikRatK94QvuhcfG1iiGjgIBgGfVaRsXUhA7o4JbihRD3dVlSK0eliPQ0oH2KV6YvubY2vRcBY1MhEvsDhjUZ5Cu1YzkhY0KnKSP6oVc2F0wckKMqEvrDH3FSX7VsrHS7n2UUstpzJds8uGoUbSboYkK+GrJTxBPOztuTdnKS0U107+l2fS8xb+Od+QTR9giXtNrdcfn5Uqj2U2M2pT1/PlP0/n7nTprt35evsG3YTTnQ==' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
 </script>
-  
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJyFkNEOwiAMRX9IxGUx0Qfjt2yjI0WgSMFlfr0smUbnkj1R2tPe9sohiI58Ap+kYemoRQsiM8RGl5xA39Pe8E4WDn1nswKeQHPPEMf52QSEQx2bBHuH/g1/qQbi5IC5SK5Uf6XQPxCGTcxACk13ExEYn39TW0taBJs1epYl1qAoJ9GTtTTIAZWGtOxx+dMRwZZjlJj2XvzWrOjIucnLCMGOswVXd6nqc1VVx1N9MC/NP5IY'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://alphahive.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://alphahive.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Asset Pricing [Part 1 : Introduction &amp; Overview]' href='http://alphahive.wordpress.com/2012/12/31/asset-pricing-part-1-introduction-overview/' />
+<link rel='next' title='Asset Pricing [Part 2b : Sketching The Traditional Framework]' href='http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2b-sketching-the-traditional-framework/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/' />
+<link rel='shortlink' href='http://wp.me/p211cP-ex' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Falphahive.wordpress.com%2F2013%2F01%2F12%2Fasset-pricing-part-2-sketching-the-traditional-framework%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Falphahive.wordpress.com%2F2013%2F01%2F12%2Fasset-pricing-part-2-sketching-the-traditional-framework%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Asset Pricing [Part 2a : Sketching The Traditional Framework]" />
+<meta property="og:url" content="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/" />
+<meta property="og:description" content="Up until the proliferation of the mean-variance analysis due to Markowitz, the typical advice offered by an investment advisor would entail some combination of the following ideas: Young investors ..." />
+<meta property="article:published_time" content="2013-01-12T17:37:51+00:00" />
+<meta property="article:modified_time" content="2013-05-03T17:23:35+00:00" />
+<meta property="article:author" content="http://alphahive.wordpress.com/author/alphahive/" />
+<meta property="og:site_name" content="Alpha Hive ::" />
+<meta property="og:image" content="http://alphahive.files.wordpress.com/2013/01/r11.jpeg" />
+<meta property="og:image" content="http://alphahive.files.wordpress.com/2013/01/r2.jpeg" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://alphahive.files.wordpress.com/2013/01/vvvc.jpg?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/c53e8e0a19e97adef64f0f05ecb7444d?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/c53e8e0a19e97adef64f0f05ecb7444d?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://1.gravatar.com/blavatar/f391cfc886d0d014b635b9c170b68f6d?s=114" />
+<link rel='openid.server' href='http://alphahive.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://alphahive.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://alphahive.wordpress.com/osd.xml" title="Alpha Hive ::" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none !important;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Alpha Hive ::" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Application Of R To Topics In Finance &amp; Economics " /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://alphahive.wordpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/c53e8e0a19e97adef64f0f05ecb7444d?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Asset Pricing [Part 2a : Sketching The Traditional Framework] | Alpha Hive :: on WordPress.com" />
+<meta name="description" content="Up until the proliferation of the mean-variance analysis due to Markowitz, the typical advice offered by an investment advisor would entail some combination of the following ideas: Young investors should allocate a disproportionately large amount of their investable capital to risky securities within risky asset classes. Older investors should allocate a disproportionate amount of capital&hellip;" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type="text/javascript" src="http://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 29795639, pt: 'permalink', wa: 0, as: 0, domain: 'alphahive.wordpress.com', url: 'http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/', gid: '', };
+</script>
+<style id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
 </head>
+<body class="single single-post postid-901 single-format-standard custom-background mp6 highlander-enabled highlander-light">
+<div class="wrapper">
+	<header id="header" role="banner">
+		<hgroup>
+			<h1 id="site-title"><a href="http://alphahive.wordpress.com/" title="Alpha Hive ::" rel="home"><span class="emdash">&mdash;</span>Alpha Hive ::</a></h1>
+							<h2 id="site-description">Application Of R To Topics In Finance &amp; Economics </h2>
+					</hgroup>
 
-  <body>
+		<div class="clear">
+			<nav id="access" class="clear" role="navigation">
+				<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-763" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-763"><a href="http://alphahive.wordpress.com/category/experiments/">Experiments</a></li>
+<li id="menu-item-1196" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1196"><a href="http://alphahive.wordpress.com/category/asset-pricing/">Asset Pricing</a></li>
+<li id="menu-item-1212" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1212"><a href="http://alphahive.wordpress.com/category/data-mining/">Data Mining</a></li>
+<li id="menu-item-1213" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1213"><a href="http://alphahive.wordpress.com/category/foreign-exchange/">Foreign Exchange</a></li>
+<li id="menu-item-1214" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1214"><a href="http://alphahive.wordpress.com/category/event-study-2/">Event Study</a></li>
+</ul></div>			</nav><!-- end #menu -->
 
-    
+			<div class="search-form-holder">
+	<form method="get" id="searchform" action="http://alphahive.wordpress.com/">
+		<fieldset>
+			<input name="s" type="text" onfocus="if ( this.value=='Search' ) this.value='';" onblur="if ( this.value=='' ) this.value='Search';" value="Search" />
+			<button type="submit"></button>
+		</fieldset>
+	</form>
+</div><!-- .search-form-holder -->		</div>
+	</header>
+		<div class="middle clear">
+<div id="content" role="main">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner"><h2><h2>
-<span style="font-family: Georgia, Times New Roman, serif;">
-Open sets and topology</span></h2>
-<h3>
-<span style="font-family: Georgia, Times New Roman, serif;">
-1.1 Deﬁnition and examples</span></h3>
-<span style="font-family: Georgia, Times New Roman, serif;"><span style="color: #351c75;"><b>Deﬁnition</b>:</span> Let $X$ be a set and $T$ be a family of subsets of $X$. $T$ is called a <i>topology</i> on $X$ if:</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
-<br />
-<ol>
-<li><span style="font-family: Georgia, Times New Roman, serif;">The empty set $\emptyset$ and $X$ are elements of $T$.&nbsp;</span></li>
-<li><span style="font-family: Georgia, Times New Roman, serif;">Arbitrary (ﬁnite or inﬁnite) unions $\cup_\alpha U_\alpha$ of elements $U_{\alpha}$of T belong to $T$ (or equivalently, $T$ is stable by arbitrary unions).</span></li>
-<li><span style="font-family: Georgia, Times New Roman, serif;">Any ﬁnite intersection $$ of elements of T is in T (or equivalently, T is stable by ﬁnite intersection).</span></li>
-</ol>
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #351c75;">Deﬁnition</span>&nbsp;</b>Set $X$ with a given topology deﬁned on it, i.e. the pair $(X, T)$, is a<b><span style="color: blue;"> <i>topological space</i></span></b>.</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><span style="color: #351c75;"><b>Deﬁnition</b>&nbsp;</span>Elements of $T$ are called <b><i><span style="color: blue;">open sets.</span></i></b></span><br />
-<span style="font-family: Georgia, Times New Roman, serif;">To specify a topological space, it means to deﬁne a set $X$ and a topology in $X$, i.e., to indicate which subsets of $X$ are considered as open sets. Clearly, we can deﬁne on $X$ various diﬀerent topologies and therefore obtain diﬀerent topological spaces constructed on the same set $X$.</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;">Any set $X$ can always be considered as a topological space:</span><br />
-<ul>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">the trivial topology $T_t = \{\emptyset, X\}$;&nbsp;</span></li>
-<li><span style="font-family: Georgia, Times New Roman, serif;">the discrete topology $T_d =\{2^X,X\}$.</span></li>
+	
+		<article id="post-901" class="post-901 post type-post status-publish format-standard hentry category-asset-pricing category-experiments tag-asset-pricing tag-capital-allocation-line tag-indifference-curve tag-optimal-portfolio tag-r tag-risk-aversion tag-risky-portfolio tag-two-fund-theorem tag-utility-function clear">
+	<div class="post-meta">
+			<div class="post-data">
+		<div class="post-date"><a class="post-date-link" href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/" rel="bookmark">January 12, 2013</a></div><div class="post-categories"><a href="http://alphahive.wordpress.com/category/asset-pricing/" title="View all posts in Asset Pricing" rel="category tag">Asset Pricing</a>, <a href="http://alphahive.wordpress.com/category/experiments/" title="View all posts in Experiments" rel="category tag">Experiments</a></div>	</div><!-- .post-data -->
+
+				<div class="comments-link">
+			<a href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/#respond" title="Comment on Asset Pricing [Part 2a : Sketching The Traditional Framework]">Leave a Comment</a>		</div>
+	
+			</div><!-- .post-meta -->
+
+	<div class="post-content">
+		<header>
+			<h1 class="post-title">Asset Pricing [Part 2a : Sketching The Traditional Framework]</h1>
+		</header>
+		<p style="text-align:left;"><span style="color:#000000;">Up until the proliferation of the mean-variance analysis due to Markowitz, the typical advice offered by an investment advisor would entail some combination of the following ideas:</span></p>
+<ul style="text-align:left;">
+<li><span style="color:#000000;line-height:13px;">Young investors should allocate a disproportionately large amount of their investable capital to risky securities within risky asset classes.</span></li>
 </ul>
-<span style="font-family: Georgia, 'Times New Roman', serif;">We notice that in the case of the discrete topology every subset of $(X, T_d)$ is open.</span><br />
-<ol>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set $N$ is called a <span style="color: blue;"><i><b>neighborhood</b></i></span> of a point $x\in (X, T)$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">if there exists an open set $O\in T$ such that $x\in O$ and $O\in N$. The set of neighborhoods of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">is noted $N(x)$.</span></li>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point x ∈ (X, T) is called a <i><b style="background-color: white;"><span style="color: blue;">contact point</span></b></i> of a set $A$ if every neighborhood of $x$ </span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of $A$;</span></li>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">&nbsp;A point&nbsp;$x\in (X, T)$&nbsp;is called a <i><b><span style="color: blue;">limit point</span></b></i> of a set $A$ if every neighborhood of $x$&nbsp;</span><span style="font-family: Georgia, 'Times New Roman', serif;">contains at least one point of A diﬀerent of $x$.</span></li>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">The set of all contact points of a set $A$ is called the <span style="color: blue;"><i><b>closure</b></i></span> of $A$, denoted by $\bar{A}$</span></li>
-<li><span style="font-family: Georgia, 'Times New Roman', serif;">The largest open set contained in a given set $A$ is called the <b><i><span style="color: blue;">interior</span></i></b> of $A$.</span></li>
-</ol>
-<span style="font-family: Georgia, Times New Roman, serif;"></span><br />
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #4c1130;">Theorem 1</span></b> Let $A$ be a subset of a topological space $(X, T)$. Then</span></div>
-<span style="font-family: Georgia, Times New Roman, serif;">
-</span>
-<div>
-<ol><span style="font-family: Georgia, Times New Roman, serif;">
-<li>$ A\subset \bar{A}$,</li>
-<li>$\bar{\bar{A}} = \bar{A}$,</li>
-<li>if $B\subset A$, then $B\subset \bar{A}$,</li>
-<li>&nbsp;for all $A, B \in X$, $\bar{A \cup B} =\bar{ A}\cup\bar{B}$.</li>
-</span></ol>
-<h3>
-<span style="font-family: Georgia, Times New Roman, serif;">
-1.2 Comparison of topologies</span></h3>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><span style="color: #20124d;">Deﬁnition </span>Let $T_1$ and $T_2$ be two topologies deﬁned in the same set $X$. Then the topology $T_1$ is <i><span style="color: blue;"><b>stronger</b></span></i> than the topology $T_2$ if $T_2 \subset T_1$, i.e., if every set of the system $T_2$ is in a set of the system $T_1$.</span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;">Let $\tau$ be the set of all topologies in $X$. Then for all $T\in\tau$, $T_t \subset T\subset T$</span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #4c1130;">Theorem 2</span></b> Let $\{T_\alpha\}$ be any set of topologies in $X$. Then the intersection $T = \cap_\alpha T_\alpha$ is also a topology in $X$.</span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #b45f06;">Corollary 1</span></b> Let $A$ be any system of subsets of a set $X$. Then there exists a minimal topology in $X$ containing $A$, i.e., a topology $T(A)$ containing A and contained in every topology containing $A$.</span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span></div>
-<div>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #20124d;">Deﬁnition</span></b>&nbsp;Let $\mathcal{A}$ be a system of subsets of $X$ and $A$ a ﬁxed subset of $X$. Then the system $\mathcal{A}_A$ consisting of all subsets of $X$ of the form $A\cap B$, $ B\in \mathcal{A}$ is called the <b><i><span style="color: blue;">trace</span></i></b> of the system $\mathcal{A}$ on the set $A$.</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #20124d;">Deﬁnition&nbsp;</span></b>Let $(X, T_X)$ and $(Y, T_Y )$ be two topological spaces. The <b><i><span style="color: blue;">product topology</span></i></b> in $X\times Y$, denoted $T = T_X \otimes T_Y $, is deﬁned by calling $U\subset X \times Y$ open if</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;">$$\forall x, y\in U, \exists V \in T_X\text{ and }W \in T_Y\text{ such that }x\in V, y \in W \text{ and } V \times W subset U.$$</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
-<h3>
-<span style="font-family: Georgia, Times New Roman, serif;">
-1.3 Dense subsets and connected topological spaces</span></h3>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: #cc0000;">Deﬁnition</span></b> Let $A$ and $B$ be two subsets of a topological space $(X, T)$ with the induced topologies. Then $A$ is said to be dense in $B$ if $B\subset \bar{A}$ with respect to the induced topology in $B$. In particular, $A$ is said to be <b><i><span style="color: blue;">dense</span></i></b> in $X$ if $\bar{A} = X$. A set $A$ is said to be <b><span style="color: blue;"><i>nowhere dense</i></span></b> if it is dense in no (open) set at all.</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span>
-<span style="font-family: Georgia, Times New Roman, serif;"><b><span style="color: red;">Deﬁnition</span></b>&nbsp;$A$ topological space $(X, T)$ is said to be <b><i><span style="color: blue;">connected</span></i></b> if it has no subsets other than $\emptyset$ and $X$ which are both open and closed.</span><br />
-<span style="font-family: Georgia, Times New Roman, serif;"><br /></span></div>
+<ul style="text-align:left;">
+<li><span style="color:#000000;line-height:13px;">Older investors should allocate a disproportionate amount of capital to less volatile securities within less risky asset classes.  </span></li>
+</ul>
+<p><span style="color:#000000;">While intuitively compelling and perhaps sensible as a first approximation, linking an individual&#8217;s asset allocation decision exclusively to his human capital in such a broad fashion is suboptimal. </span><span style="color:#000000;">According to the <strong>Two-fund separation theory</strong>, a key result in Modern Portfolio Theory, the investment allocation problem can be decomposed into two elements :</span></p>
+<p style="text-align:justify;"><strong><span style="color:#800000;"><span style="line-height:13px;">(1.) Finding the optimal portfolio of risky assets.</span></span></strong></p>
+<ul>
+<li><span style="color:#000000;"><span style="text-align:justify;">This amounts to finding a vector of weights associated with risky assets that maximise the risk adjusted return of the resulting portfolio. </span><span style="text-align:justify;">An important consideration here is the selection and use of an appropriate risk-adjusted performance measure.</span></span></li>
+</ul>
+<p><strong><span style="color:#800000;"><em>(2.) Finding the best combination of the risk free asset and the optimal risky portfolio.</em></span></strong></p>
+<ul>
+<li style="text-align:left;"><span style="line-height:13px;color:#000000;">Once the optimal risky portfolio has been determined, it can be combined with the risk free asset; with respective weights in each of these &#8216;funds&#8217; subject to individual risk preferences, the total portfolio can be constructed.</span></li>
+</ul>
+<p style="text-align:left;"><strong><span style="color:#800000;">The most important implications of Modern Portfolio Theory can be summarised as follows.</span></strong></p>
+<ul>
+<li><span style="line-height:13px;color:#000000;">Investors should control total portfolio risk by varying the amount of capital invested in the risk free asset and the optimal risky portfolio as opposed to changing the composition of the risky portfolio itself. The weight given to the either &#8216;fund&#8217; depends on the individual&#8217;s risk aversion.</span></li>
+</ul>
+<ul>
+<li><span style="color:#000000;">The portfolio of risky assets should contain a large number of assets that are less than perfectly positively correlated (i.e. a well diversified portfolio)</span></li>
+</ul>
+<p style="text-align:left;"><span style="color:#000000;">It should be noted that most of the relevant results are derived under the assumptions that <strong>either</strong> [a] all returns are normally distributed <strong>or</strong> [b] investors care only about mean returns and variance of returns. Further assumptions require that all assets be tradable and no transaction costs are incurred when trades occur.</span></p>
+<p style="text-align:left;"><span style="color:#000000;">Before the <strong>Two fund theorem</strong> can be implemented, a theoretical framework for understanding the tradeoff between risk and return will be briefly sketched.</span></p>
+<p style="text-align:center;"><span style="color:#ffffff;">j</span></p>
+<p style="text-align:center;"><span style="color:#3366ff;"><strong>[Utility Functions and Indifference curves]</strong></span></p>
+<p style="text-align:center;"><span style="color:#ffffff;">l</span></p>
+<p style="text-align:left;"><span style="color:#000000;">The standard utility function of choice  is the power utility function, also known as constant relative risk aversion or the CRRA utility function.</span></p>
+<p style="text-align:center;"><a href="http://alphahive.files.wordpress.com/2013/01/vvvc.jpg"><img class="aligncenter  wp-image-942" alt="vvvc" src="http://alphahive.files.wordpress.com/2013/01/vvvc.jpg?w=245&#038;h=81" width="245" height="81" /></a></p>
+<p style="text-align:center;"><a href="http://alphahive.files.wordpress.com/2013/01/hj.jpg"><img class="aligncenter  wp-image-958" alt="hj" src="http://alphahive.files.wordpress.com/2013/01/hj.jpg?w=225&#038;h=86" width="225" height="86" /></a></p>
+<p style="text-align:left;"><span style="color:#000000;">Gamma, or the coefficient of risk aversion governs the curvature of the utility function and how resistant individuals are to taking risks. It can be shown that the utility an investor derives from a pattern of returns amounts to </span></p>
+<p style="text-align:center;"><a href="http://alphahive.files.wordpress.com/2013/01/wer.jpg"><img class="aligncenter  wp-image-969" alt="wer" src="http://alphahive.files.wordpress.com/2013/01/wer.jpg?w=151&#038;h=42" width="151" height="42" /></a></p>
+<p style="text-align:left;"><span style="color:#000000;">with <strong>A</strong> representing the risk aversion parameter. If assets can be thought of as providing a benefit (returns) at a cost (risk), then a simple way to visualise the tradeoff can be attained using Indifference curves. </span><span style="color:#000000;">To illustrate these and other issues of this post, the following two helper functions,<span style="color:#800000;"><em>utility.contours</em></span> and <span style="color:#800000;"><em>contours.plot</em></span> were written.</span></p>
+<pre class="brush: r; title: ; wrap-lines: false; notranslate" title="">
+#############################################################################
+#
+# Contour Plotting
+#
+#############################################################################
+
+contours.plot &lt;- function(type,expected.ret,risky.var,num.assets,risk.free,risk.aversion,total.risk){
+
+	opt.risky.alloc &lt;- (expected.ret-risk.free)/(risk.aversion* risky.var)
+	opt.riskfree.alloc &lt;- (1-opt.risky.alloc)
+	opt.port.ret &lt;- risk.free+opt.risky.alloc*(expected.ret-risk.free)
+	opt.port.risk &lt;- (opt.risky.alloc^2)*risky.var
+	opt.utility &lt;- opt.port.ret-(0.5*risk.aversion*opt.port.risk)
+
+	contours &lt;- vector('list',num.assets)
+	  for(i in 1:num.assets){
+	  		contours[[i]]$optimal.utility &lt;- opt.utility[i]
+	  		contours[[i]]$returns &lt;- opt.utility[i]+(0.5*risk.aversion*total.risk)
+	  		contours[[i]]$risk &lt;- sqrt(total.risk)
+	  }
+
+	 s.contours &lt;- vector('list',5)
+	 u.contours &lt;- vector('list',5)
+
+	  for(i in 1:5){
+	      s.contours[[i]]$optimal.utility &lt;- opt.utility[1]
+	  		s.contours[[i]]$returns &lt;- opt.utility[1]+(0.5*i*total.risk)
+	    	s.contours[[i]]$risk &lt;- sqrt(total.risk)
+	  		u.contours[[i]]$optimal.utility &lt;- i
+	  		u.contours[[i]]$returns &lt;- opt.utility[1]+i/5+(0.5*risk.aversion*total.risk)
+	    	u.contours[[i]]$risk &lt;- sqrt(total.risk)
+	  }
+
+	col.indiff &lt;- colorRampPalette(brewer.pal(9,&quot;Blues&quot;))(100)
+    ind &lt;- 100
+
+	 if(type=='Sample'){
+	  windows()
+
+	  par(mfrow=c(2,1),mar=c(1.5,4,3,1.5))
+		plot(main='Indifference Curves',cex.main=0.85,cex.lab=0.75,cex.axis=0.75,ylab='Expected Return',xlab='Risk',x=s.contours[[1]]$risk,y=s.contours[[1]]$returns,type='line',col=col.indiff[ind],lty=2,lwd=2)
+
+	  for(i in 2:5){
+      		lines(main='Indifference Curves',cex.main=0.85,cex.lab=0.75,cex.axis=0.75,ylab='Expected Return',xlab='Risk',x=s.contours[[i]]$risk,y=s.contours[[i]]$returns,type='line',col=col.indiff[ind-i*5],lty=2,lwd=2)
+    }
+ 	  legend(title='Utility constant',y.intersp=0.8,adj=0,'bottomright',horiz=F,fill=c(col.indiff[ind],col.indiff[ind-2*5],col.indiff[ind-3*5],col.indiff[ind-4*5],col.indiff[ind-5*5]),legend=c(paste('Risk Aversion: ',1:5)),ncol=1,bg='white',bty='n',border='black',cex=0.70)
+
+		par(mar=c(4,4,1,1.5))
+		plot(cex.main=0.85,cex.lab=0.75,cex.axis=0.75,ylab='Expected Return',xlab='Risk',x=u.contours[[1]]$risk,y=u.contours[[1]]$returns,type='line',col=col.indiff[ind],lty=2,lwd=2)
+
+	  for(i in 2:5){
+     			lines(main='Indifference Curves',cex.main=0.85,cex.lab=0.75,cex.axis=0.75,ylab='Expected Return',xlab='Risk',x=u.contours[[i]]$risk,y=u.contours[[i]]$returns,type='line',col=col.indiff[ind-i*5],lty=2,lwd=2)
+    }
+		legend(title='Risk aversion constant',y.intersp=0.8,adj=0,'bottomright',horiz=F,fill=c(col.indiff[ind],col.indiff[ind-2*5],col.indiff[ind-3*5],col.indiff[ind-4*5],col.indiff[ind-5*5]),legend=c(paste('Utility: ',1:5)),ncol=1,bg='white',bty='n',border='black',cex=0.70)
+
+	} else if(type=='Optimal'){
+
+	 lines(cex.main=0.85,cex.lab=0.75,cex.axis=0.75,ylab='Expected Return',xlab='Risk',x=contours[[1]]$risk,y=contours[[1]]$returns,type='line',col='dark orange',lty=2,lwd=2)
+	 points(x=sqrt(opt.port.risk),opt.port.ret,pch=8,col='black')
+
+	  for(i in 1:5){
+    	lines(x=u.contours[[i]]$risk,y=u.contours[[i]]$returns,type='line',col=col.indiff[ind-i*5],lty=2,lwd=2)
+      }
+   }
+}
+</pre>
+<pre class="brush: r; title: ; wrap-lines: false; notranslate" title="">
+##############################################################################
+#
+# Utility Contours
+#
+#############################################################################
+
+utility.contours &lt;- function(type,risky.assets,risk.aversion,optimised.portfolio){
+
+	risk.free &lt;- risky.assets[[4]]
+	total.risk &lt;- seq(0,2,by=0.01)^2
+
+	if(type=='Assets'){
+	  	expected.ret &lt;- risky.assets[[5]]
+	  	risky.var &lt;- risky.assets[[3]]^2
+	  	num.assets &lt;- length(risky.var)
+		contours.plot(type='Optimal',expected.ret,risky.var,num.assets,risk.free,risk.aversion,total.risk)
+
+	 } else if(type=='Sharpe'){
+	 	expected.ret &lt;- optimised.portfolio[[4]][1]
+	    risky.var &lt;- (optimised.portfolio[[4]][2])^2
+	  	num.assets &lt;- 1
+	  	contours.plot(type='Optimal',expected.ret,risky.var,num.assets,risk.free,risk.aversion,total.risk)
+
+	 } else if(type=='Indifference Sample'){
+	    sim &lt;- simulate.assets(1)
+	  	expected.ret &lt;- sim[[5]]
+	  	risky.var &lt;- sim[[3]]^2
+	  	risk.free.smpl &lt;- sim[[4]]
+	  	num.assets &lt;- 1
+	  	risk.aversion.smpl &lt;- 1
+	  	contours.plot(type='Sample',expected.ret,risky.var,num.assets,risk.free.smpl,risk.aversion.smpl,total.risk)
+
+     } else	if(type=='CRRA'){
+		consumption &lt;- seq(0,3,by=0.01)
+		gamma &lt;- c(0.7,0.5,0.2)
+		util &lt;- matrix(nrow=length(consumption),ncol=length(gamma),c(rep(0,length(consumption)*length(gamma))),byrow=FALSE)
+		marginal.util &lt;- matrix(nrow=length(consumption),ncol=length(gamma),c(rep(0,length(consumption)*length(gamma))),byrow=FALSE)
+
+	for(i in 1:length(gamma)){
+		util[,i] &lt;- (consumption^(1-gamma[i]))/(1-gamma[i])
+		marginal.util[,i] &lt;- consumption^(-gamma[i])
+	}
+
+	colnames(util) &lt;- paste('Gamma',1:length(gamma))
+	colnames(marginal.util) &lt;- paste ('Gamma',1:length(gamma))
+	colours &lt;- colorRampPalette(brewer.pal(9,&quot;Blues&quot;))(100)
+	col.index &lt;- 100
+
+	windows()
+	 par(mfrow=c(2,1),mar=c(2,2,3,2))
+	 plot(cex.axis=0.75,lwd=2,x=consumption,util[,1],type='line',col=colours[col.index],main='Constant Relative Risk Aversion - Utility function',cex.main=0.85,cex.lab=0.75,ylab='')
+	 for(i in 2:length(gamma)){
+		lines(lwd=3,x=consumption,util[,i],col=colours[col.index-(i*10)])
+	 }
+
+	 par(mar=c(3,2,1,2))
+	 plot(cex.axis=0.75,ylim=c(-3,3),lwd=2,x=consumption,marginal.util[,1],type='line',col=colours[col.index],main='Constant Relative Risk Aversion - Marginal Utility function',cex.main=0.85,cex.lab=0.75,ylab='')
+	 for(i in 2:length(gamma)){
+		lines(lwd=2,x=consumption,marginal.util[,i],col=colours[col.index-(i*10)])
+	 }
+	 legend(horiz=TRUE,title='Gamma',&quot;bottom&quot;,fill=c(colours[col.index],colours[col.index-20],colours[col.index-30]),legend=gamma[1:3],bg='white',bty='n',border='white',cex=0.75)
+   }
+}
+</pre>
+<p><span style="color:#000000;">To Implement these functions :</span></p>
+<pre class="brush: r; title: ; wrap-lines: false; notranslate" title="">
+##############################################################
+#
+# Implementations
+#
+##############################################################
+
+#Utility Contours
+
+utility.contours(type='CRRA',risky.assets=NULL,risk.aversion=NULL,optimised.portfolio=NULL)
+utility.contours(type='Indifference Sample',risky.assets=NULL,risk.aversion=0.5,optimised.portfolio=NULL)
+</pre>
+<p><span style="color:#000000;"><br />
+<a href="http://alphahive.files.wordpress.com/2013/01/r11.jpeg"><img class="aligncenter  wp-image-976" alt="r1" src="http://alphahive.files.wordpress.com/2013/01/r11.jpeg?w=536&#038;h=536" width="536" height="536" /></a></span></p>
+<p style="text-align:left;"><span style="color:#000000;">The plots above illustrate the CRRA utility function as well as its first derivative (or marginal utility function). The greater the risk aversion coefficient ,gamma, the greater the curvature of the utility function, the more risk averse an individual, the larger the amount of money (the certainty equivalent) required to make that individual indifferent between receiving a particular money amount with perfect certainty and obtaining that amount as an expectation of a gamble. The slope of the utility curve,as depicted in the bottom plot as the first derivative of the preceding function , suggests that the additional utility derived from an extra unit of wealth declines as the amount or level of wealth increases. While utility derived increases with wealth, the rate at which an additional unit of wealth promotes greater utility decreases over rising wealth.</span></p>
+<p style="text-align:center;"><a href="http://alphahive.files.wordpress.com/2013/01/r2.jpeg"><img class="aligncenter  wp-image-973" alt="r2" src="http://alphahive.files.wordpress.com/2013/01/r2.jpeg?w=536&#038;h=536" width="536" height="536" /></a></p>
+<p><span style="color:#000000;">The first plot depicts the effect on indifference curves of varying the risk aversion parameter while holding utility constant. The converse is true for the second plot, in which the risk aversion parameter is held constant across varying degrees of utility while indifference curves are charted. True to its name, an indifference curve connects all combinations of (in this case) risk and return which yield the same utility. With respect to the first plot, the greater the risk aversion of an individual, the greater the expected return required for a given level of risk before the specified level of utility can be reached. With respect to the second plot, northwesterly movements of the contour signify combinations of risk and return that yield greater utility. Intuitively, when risk aversion and risk are held constant, the asset that provides greater expected returns would command greater utility. An investor, who regards assets as bundles of risks and returns, would wish to hold a portfolio of assets that are located on the highest possible indifference curve for a given aversion to risk.</span></p>
+
+<div class="wpa" style="position: relative; width:300px; text-align: center; padding: 0; margin: 10px auto; overflow: hidden; clear: both;">
+<a style="position: absolute; text-align: left; display: block; font: 9px/1 sans-serif; text-decoration: underline;" href="http://en.wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Blogum";
+		var wpcom_adclk_slot = "wpcom_below_post";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "alphahive.wordpress.com");
+GA_googleAddAttr("BlogId", "29795639");
+GA_googleAddAttr("PageURL", "http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("Autotag", "business");
+GA_googleAddAttr("Autotag", "science");
+GA_googleAddAttr("Tag", "asset-pricing");
+GA_googleAddAttr("Tag", "experiments");
+GA_googleAddAttr("Tag", "asset-pricing");
+GA_googleAddAttr("Tag", "capital-allocation-line");
+GA_googleAddAttr("Tag", "indifference-curve");
+GA_googleAddAttr("Tag", "optimal-portfolio");
+GA_googleAddAttr("Tag", "r");
+GA_googleAddAttr("Tag", "risk-aversion");
+GA_googleAddAttr("Tag", "risky-portfolio");
+GA_googleAddAttr("Tag", "two-fund-theorem");
+GA_googleAddAttr("Tag", "utility-function");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_border", "e9e9e9");
+GA_googleAddAttr("theme_text", "9d9d9d");
+GA_googleAddAttr("theme_link", "000000");
+GA_googleAddAttr("theme_url", "000000");
+GA_googleAddAdSensePageAttr("google_page_url", "http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/");
+GA_googleFillSlot("wpcom_below_post");
+}
+</script>
 </div>
-<span style="font-family: Georgia, Times New Roman, serif;">
-</span><br />
-<ol>
-</ol>
+<style type="text/css">
+div.wpa>div { margin-top: 1em; } #google_ads_div_wpcom_below_post_adsafe_ad_container { display: block !important; }
+</style>
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-901"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/?share=facebook" title="Share on Facebook" id="sharing-facebook-901"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-29795639-901-52f79e46f2102' data-src='//widgets.wp.com/likes/#blog_id=29795639&amp;post_id=901&amp;origin=alphahive.wordpress.com&amp;obj_id=29795639-901-52f79e46f2102' data-name='like-post-frame-29795639-901-52f79e46f2102'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts'>
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>		
+		<div class="post-tags clear"><ul><li><a href="http://alphahive.wordpress.com/tag/asset-pricing/" rel="tag">Asset Pricing</a></li><li><a href="http://alphahive.wordpress.com/tag/capital-allocation-line/" rel="tag">capital allocation line</a></li><li><a href="http://alphahive.wordpress.com/tag/indifference-curve/" rel="tag">indifference curve</a></li><li><a href="http://alphahive.wordpress.com/tag/optimal-portfolio/" rel="tag">optimal portfolio</a></li><li><a href="http://alphahive.wordpress.com/tag/r/" rel="tag">R</a></li><li><a href="http://alphahive.wordpress.com/tag/risk-aversion/" rel="tag">risk aversion</a></li><li><a href="http://alphahive.wordpress.com/tag/risky-portfolio/" rel="tag">risky portfolio</a></li><li><a href="http://alphahive.wordpress.com/tag/two-fund-theorem/" rel="tag">Two fund theorem</a></li><li><a href="http://alphahive.wordpress.com/tag/utility-function/" rel="tag">utility function</a></li></ul></div><!-- .post-tags -->	</div><!-- .post-content -->
+
+</article><!-- #post-901 -->
+		<nav id="nav-below" class="clear">
+			<span class="nav-previous"><a href="http://alphahive.wordpress.com/2012/12/31/asset-pricing-part-1-introduction-overview/" rel="prev"><span class="meta-nav">&larr;</span> Previous post</a></span>
+			<span class="nav-next"><a href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2b-sketching-the-traditional-framework/" rel="next">Next post <span class="meta-nav">&rarr;</span></a></span>
+		</nav><!-- #nav-below -->
+
+	
+</div><!-- #content -->
+
+<div class="sidebar" role="complementary">
+		<aside id="image-4" class="widget_image widget"><div class="widget-body"><div style="overflow:hidden;"><img src="http://alphahive.files.wordpress.com/2013/12/honeycomb-abstract-david-pyatt1.jpg?w=300&amp;h=300" class="aligncenter" width="300" height="300" /></div>
+</div></aside><aside id="text-5" class="widget_text widget"><div class="widget-body"><h1>Disclaimer</h1>			<div class="textwidget">All information on this blog is for my personal reference only and should not be thought of as instructive in any way. Nothing should be regarded as instructive or written up for the purposes of reproducible research. A loose diary of tinkering is a more apt description. </div>
+		</div></aside><aside id="wp_tag_cloud-4" class="wp_widget_tag_cloud widget"><div class="widget-body"><h1>Tags</h1><div style="overflow:hidden"><a href='http://alphahive.wordpress.com/tag/3-factor-model/' class='tag-link-173563978' title='4 topics' style='font-size: 12.307692307692pt;'>3 factor model</a>
+<a href='http://alphahive.wordpress.com/tag/3d-scatter-plot/' class='tag-link-99884565' title='1 topic' style='font-size: 8pt;'>3d scatter plot</a>
+<a href='http://alphahive.wordpress.com/tag/abnormal-returns/' class='tag-link-21380668' title='1 topic' style='font-size: 8pt;'>Abnormal Returns</a>
+<a href='http://alphahive.wordpress.com/tag/asset-pricing/' class='tag-link-1921303' title='14 topics' style='font-size: 17.476923076923pt;'>Asset Pricing</a>
+<a href='http://alphahive.wordpress.com/tag/balassa-samuelson/' class='tag-link-34170786' title='1 topic' style='font-size: 8pt;'>Balassa Samuelson</a>
+<a href='http://alphahive.wordpress.com/tag/barplots/' class='tag-link-58457175' title='2 topics' style='font-size: 9.9384615384615pt;'>barplots</a>
+<a href='http://alphahive.wordpress.com/tag/bayesian-model-averaging/' class='tag-link-67149153' title='1 topic' style='font-size: 8pt;'>Bayesian model averaging</a>
+<a href='http://alphahive.wordpress.com/tag/black-jensen-scholes/' class='tag-link-99879129' title='1 topic' style='font-size: 8pt;'>Black Jensen Scholes</a>
+<a href='http://alphahive.wordpress.com/tag/caar/' class='tag-link-8740755' title='1 topic' style='font-size: 8pt;'>CAAR</a>
+<a href='http://alphahive.wordpress.com/tag/campbell-shiller/' class='tag-link-200793616' title='2 topics' style='font-size: 9.9384615384615pt;'>campbell shiller</a>
+<a href='http://alphahive.wordpress.com/tag/capital-allocation-line/' class='tag-link-125828168' title='6 topics' style='font-size: 13.923076923077pt;'>capital allocation line</a>
+<a href='http://alphahive.wordpress.com/tag/capital-asset-pricing-model/' class='tag-link-20004473' title='10 topics' style='font-size: 15.969230769231pt;'>Capital asset pricing model</a>
+<a href='http://alphahive.wordpress.com/tag/capm/' class='tag-link-979594' title='11 topics' style='font-size: 16.4pt;'>CAPM</a>
+<a href='http://alphahive.wordpress.com/tag/car/' class='tag-link-9012' title='1 topic' style='font-size: 8pt;'>CAR</a>
+<a href='http://alphahive.wordpress.com/tag/cluster-analysis/' class='tag-link-1532908' title='3 topics' style='font-size: 11.230769230769pt;'>Cluster analysis</a>
+<a href='http://alphahive.wordpress.com/tag/copula/' class='tag-link-11823' title='2 topics' style='font-size: 9.9384615384615pt;'>Copula</a>
+<a href='http://alphahive.wordpress.com/tag/cumulative-abnormal-returns/' class='tag-link-103222252' title='2 topics' style='font-size: 9.9384615384615pt;'>Cumulative Abnormal Returns</a>
+<a href='http://alphahive.wordpress.com/tag/data-envelopement-analysis/' class='tag-link-101154481' title='1 topic' style='font-size: 8pt;'>Data Envelopement analysis</a>
+<a href='http://alphahive.wordpress.com/tag/data-envelopment-analysis/' class='tag-link-8850133' title='1 topic' style='font-size: 8pt;'>Data Envelopment analysis</a>
+<a href='http://alphahive.wordpress.com/tag/dea/' class='tag-link-105322' title='2 topics' style='font-size: 9.9384615384615pt;'>DEA</a>
+<a href='http://alphahive.wordpress.com/tag/dorncusch-frankel/' class='tag-link-108561632' title='1 topic' style='font-size: 8pt;'>Dorncusch Frankel</a>
+<a href='http://alphahive.wordpress.com/tag/efficiency-scores/' class='tag-link-101154482' title='1 topic' style='font-size: 8pt;'>Efficiency scores</a>
+<a href='http://alphahive.wordpress.com/tag/event-study/' class='tag-link-29437083' title='2 topics' style='font-size: 9.9384615384615pt;'>Event study</a>
+<a href='http://alphahive.wordpress.com/tag/expected-shortfall/' class='tag-link-97283569' title='1 topic' style='font-size: 8pt;'>Expected shortfall</a>
+<a href='http://alphahive.wordpress.com/tag/extreme-value-theory/' class='tag-link-11998782' title='4 topics' style='font-size: 12.307692307692pt;'>Extreme value theory</a>
+<a href='http://alphahive.wordpress.com/tag/fama-french/' class='tag-link-8016650' title='4 topics' style='font-size: 12.307692307692pt;'>Fama French</a>
+<a href='http://alphahive.wordpress.com/tag/fama-macbeth/' class='tag-link-171286889' title='4 topics' style='font-size: 12.307692307692pt;'>Fama MacBeth</a>
+<a href='http://alphahive.wordpress.com/tag/financial-sector/' class='tag-link-214352' title='1 topic' style='font-size: 8pt;'>Financial Sector</a>
+<a href='http://alphahive.wordpress.com/tag/foreign-exchange-rate-model/' class='tag-link-107287405' title='1 topic' style='font-size: 8pt;'>foreign exchange rate model</a>
+<a href='http://alphahive.wordpress.com/tag/geo-chart/' class='tag-link-107681553' title='1 topic' style='font-size: 8pt;'>geo chart</a>
+<a href='http://alphahive.wordpress.com/tag/googlevis/' class='tag-link-51586420' title='1 topic' style='font-size: 8pt;'>googleVis</a>
+<a href='http://alphahive.wordpress.com/tag/google-visualisation/' class='tag-link-62153374' title='1 topic' style='font-size: 8pt;'>Google visualisation</a>
+<a href='http://alphahive.wordpress.com/tag/impulse-response/' class='tag-link-9809960' title='2 topics' style='font-size: 9.9384615384615pt;'>impulse response</a>
+<a href='http://alphahive.wordpress.com/tag/indifference-curve/' class='tag-link-640023' title='3 topics' style='font-size: 11.230769230769pt;'>indifference curve</a>
+<a href='http://alphahive.wordpress.com/tag/joint-distribution-of-stock-returns/' class='tag-link-99879952' title='2 topics' style='font-size: 9.9384615384615pt;'>Joint Distribution of Stock returns</a>
+<a href='http://alphahive.wordpress.com/tag/k-means-clustering/' class='tag-link-5610719' title='2 topics' style='font-size: 9.9384615384615pt;'>K-means clustering</a>
+<a href='http://alphahive.wordpress.com/tag/macroeconomic-factor-models/' class='tag-link-110574235' title='2 topics' style='font-size: 9.9384615384615pt;'>macroeconomic factor models</a>
+<a href='http://alphahive.wordpress.com/tag/maxima-model/' class='tag-link-99883575' title='1 topic' style='font-size: 8pt;'>Maxima Model</a>
+<a href='http://alphahive.wordpress.com/tag/misalignments/' class='tag-link-27866984' title='1 topic' style='font-size: 8pt;'>misalignments</a>
+<a href='http://alphahive.wordpress.com/tag/motion-chart/' class='tag-link-7871635' title='1 topic' style='font-size: 8pt;'>motion chart</a>
+<a href='http://alphahive.wordpress.com/tag/msci/' class='tag-link-5145062' title='1 topic' style='font-size: 8pt;'>MSCI</a>
+<a href='http://alphahive.wordpress.com/tag/normal-returns/' class='tag-link-104452401' title='1 topic' style='font-size: 8pt;'>Normal returns</a>
+<a href='http://alphahive.wordpress.com/tag/ols/' class='tag-link-1943547' title='2 topics' style='font-size: 9.9384615384615pt;'>OLS</a>
+<a href='http://alphahive.wordpress.com/tag/optimal-portfolio/' class='tag-link-87504176' title='4 topics' style='font-size: 12.307692307692pt;'>optimal portfolio</a>
+<a href='http://alphahive.wordpress.com/tag/pareto-distribution/' class='tag-link-11998914' title='1 topic' style='font-size: 8pt;'>Pareto Distribution</a>
+<a href='http://alphahive.wordpress.com/tag/ppp/' class='tag-link-122721' title='1 topic' style='font-size: 8pt;'>PPP</a>
+<a href='http://alphahive.wordpress.com/tag/ppp-gdp-per-capita/' class='tag-link-107287403' title='1 topic' style='font-size: 8pt;'>PPP GDP per capita</a>
+<a href='http://alphahive.wordpress.com/tag/probability-heat-map/' class='tag-link-99884174' title='1 topic' style='font-size: 8pt;'>Probability Heat map</a>
+<a href='http://alphahive.wordpress.com/tag/purchasing-power-parity/' class='tag-link-1795543' title='1 topic' style='font-size: 8pt;'>purchasing power parity</a>
+<a href='http://alphahive.wordpress.com/tag/quantile-regression/' class='tag-link-25099629' title='2 topics' style='font-size: 9.9384615384615pt;'>Quantile regression</a>
+<a href='http://alphahive.wordpress.com/tag/quantitative-easing/' class='tag-link-13884362' title='2 topics' style='font-size: 9.9384615384615pt;'>Quantitative Easing</a>
+<a href='http://alphahive.wordpress.com/tag/r/' class='tag-link-10189' title='39 topics' style='font-size: 22pt;'>R</a>
+<a href='http://alphahive.wordpress.com/tag/real-exchange-rate/' class='tag-link-4334797' title='1 topic' style='font-size: 8pt;'>Real exchange rate</a>
+<a href='http://alphahive.wordpress.com/tag/rectangle-plots/' class='tag-link-101760821' title='1 topic' style='font-size: 8pt;'>rectangle plots</a>
+<a href='http://alphahive.wordpress.com/tag/relative-price-levels/' class='tag-link-107287404' title='1 topic' style='font-size: 8pt;'>Relative price levels</a>
+<a href='http://alphahive.wordpress.com/tag/risk-aversion/' class='tag-link-1754771' title='2 topics' style='font-size: 9.9384615384615pt;'>risk aversion</a>
+<a href='http://alphahive.wordpress.com/tag/risky-portfolio/' class='tag-link-106796234' title='4 topics' style='font-size: 12.307692307692pt;'>risky portfolio</a>
+<a href='http://alphahive.wordpress.com/tag/sharpe-ratio/' class='tag-link-1268677' title='3 topics' style='font-size: 11.230769230769pt;'>sharpe ratio</a>
+<a href='http://alphahive.wordpress.com/tag/sp500/' class='tag-link-211227' title='1 topic' style='font-size: 8pt;'>SP500</a>
+<a href='http://alphahive.wordpress.com/tag/sp500-sectors/' class='tag-link-104452403' title='1 topic' style='font-size: 8pt;'>SP500 sectors</a>
+<a href='http://alphahive.wordpress.com/tag/stack-plots/' class='tag-link-101219165' title='1 topic' style='font-size: 8pt;'>stack plots</a>
+<a href='http://alphahive.wordpress.com/tag/table/' class='tag-link-159841' title='1 topic' style='font-size: 8pt;'>table</a>
+<a href='http://alphahive.wordpress.com/tag/table-of-investment-returns/' class='tag-link-101760819' title='1 topic' style='font-size: 8pt;'>Table of investment returns</a>
+<a href='http://alphahive.wordpress.com/tag/tail-fitting/' class='tag-link-99883578' title='1 topic' style='font-size: 8pt;'>Tail fitting</a>
+<a href='http://alphahive.wordpress.com/tag/threshold-and-maxima-value/' class='tag-link-99883992' title='1 topic' style='font-size: 8pt;'>Threshold and Maxima value</a>
+<a href='http://alphahive.wordpress.com/tag/threshold-models/' class='tag-link-99883228' title='1 topic' style='font-size: 8pt;'>Threshold Models</a>
+<a href='http://alphahive.wordpress.com/tag/time-series-predictability/' class='tag-link-200793615' title='2 topics' style='font-size: 9.9384615384615pt;'>time series predictability</a>
+<a href='http://alphahive.wordpress.com/tag/time-serires/' class='tag-link-198345303' title='2 topics' style='font-size: 9.9384615384615pt;'>time serires</a>
+<a href='http://alphahive.wordpress.com/tag/tree-map/' class='tag-link-9121823' title='1 topic' style='font-size: 8pt;'>Tree Map</a>
+<a href='http://alphahive.wordpress.com/tag/tree-maps/' class='tag-link-24121834' title='1 topic' style='font-size: 8pt;'>tree maps</a>
+<a href='http://alphahive.wordpress.com/tag/two-fund-theorem/' class='tag-link-137183456' title='5 topics' style='font-size: 13.169230769231pt;'>Two fund theorem</a>
+<a href='http://alphahive.wordpress.com/tag/two-pass-regression/' class='tag-link-99885350' title='2 topics' style='font-size: 9.9384615384615pt;'>two pass regression</a>
+<a href='http://alphahive.wordpress.com/tag/uip/' class='tag-link-401716' title='1 topic' style='font-size: 8pt;'>UIP</a>
+<a href='http://alphahive.wordpress.com/tag/utility-function/' class='tag-link-6386431' title='5 topics' style='font-size: 13.169230769231pt;'>utility function</a>
+<a href='http://alphahive.wordpress.com/tag/var/' class='tag-link-39749' title='1 topic' style='font-size: 8pt;'>VaR</a></div></div></aside>		<aside id="recent-posts-4" class="widget_recent_entries widget"><div class="widget-body">		<h1>Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/11/21/asset-pricing-8d-time-series-predictability/">Asset Pricing [8d : Time Series Predictability]</a>
+							<span class="post-date">November 21, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/11/19/asset-pricing-8c-time-series-predictability/">Asset Pricing [8c : Time Series Predictability]</a>
+							<span class="post-date">November 19, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/11/14/asset-pricing-8b-time-series-predictability/">Asset Pricing [8b : Time Series Predictability]</a>
+							<span class="post-date">November 14, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/11/08/asset-pricing-8a-time-series-predictability/">Asset Pricing [8a : Time Series Predictability]</a>
+							<span class="post-date">November 8, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/10/26/asset-pricing-7c-macroeconomic-factor-model/">Asset Pricing [7c : Macroeconomic factor model]</a>
+							<span class="post-date">October 26, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/10/25/asset-pricing-7b-macroeconomic-factor-model/">Asset Pricing [7b : Macroeconomic factor model]</a>
+							<span class="post-date">October 25, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/10/24/asset-pricing-7a-macroeconomic-factor-model/">Asset Pricing [7a : Macroeconomic factor model]</a>
+							<span class="post-date">October 24, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/07/14/asset-pricing-6a-momentum-carhart-4-factor-model/">Asset Pricing [6a : Momentum &amp; Carhart 4 Factor Model]</a>
+							<span class="post-date">July 14, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/06/08/asset-pricing-5c-fama-and-french-3-factor-model/">Asset Pricing [5c : Fama and French 3 Factor Model]</a>
+							<span class="post-date">June 8, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/06/06/asset-pricing-5b-fama-french-3-factor-model/">Asset Pricing [5b : Fama French 3 Factor Model]</a>
+							<span class="post-date">June 6, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/06/06/asset-pricing-5a-fama-french-3-factor-model/">Asset Pricing [5a : Fama French 3 Factor Model]</a>
+							<span class="post-date">June 6, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/26/asset-pricing-4b-fama-macbeth/">Asset Pricing [4b: Fama MacBeth]</a>
+							<span class="post-date">May 26, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/23/asset-pricing-part-4a-black-jensen-scholes/">Asset Pricing [Part 4a: Black Jensen Scholes]</a>
+							<span class="post-date">May 23, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/20/asset-pricing-part-3b-cross-section-regression-capm/">Asset Pricing [Part 3b: Cross Section Regression CAPM]</a>
+							<span class="post-date">May 20, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/20/asset-pricing-part-3a-time-series-regression-capm/">Asset Pricing [Part 3a: Time Series Regression CAPM]</a>
+							<span class="post-date">May 20, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/09/asset-pricing-part-3a-initial-tests-issues/">Asset Pricing [Part 3a: Initial Tests &amp; Issues]</a>
+							<span class="post-date">May 9, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/04/asset-pricing-part-2g-sketching-the-traditional-framework/">Asset Pricing [Part 2g : Sketching The Traditional Framework]</a>
+							<span class="post-date">May 4, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/05/01/asset-pricing-part-2f-sketching-the-traditional-framework/">Asset Pricing [Part 2f : Sketching The Traditional Framework]</a>
+							<span class="post-date">May 1, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/01/21/asset-pricing-part-2e-sketching-the-traditional-framework/">Asset Pricing [Part 2e : Sketching The Traditional Framework]</a>
+							<span class="post-date">January 21, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/01/16/asset-pricing-part-2d-sketching-the-traditional-framework/">Asset Pricing [Part 2d : Sketching The Traditional Framework]</a>
+							<span class="post-date">January 16, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/01/13/asset-pricing-part-2c-sketching-the-traditional-framework/">Asset Pricing [Part 2c : Sketching The Traditional Framework]</a>
+							<span class="post-date">January 13, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2b-sketching-the-traditional-framework/">Asset Pricing [Part 2b : Sketching The Traditional Framework]</a>
+							<span class="post-date">January 12, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/">Asset Pricing [Part 2a : Sketching The Traditional Framework]</a>
+							<span class="post-date">January 12, 2013</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/12/31/asset-pricing-part-1-introduction-overview/">Asset Pricing [Part 1 : Introduction &amp; Overview]</a>
+							<span class="post-date">December 31, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/09/06/factor-models-and-portfolio-construction-introduction/">Factor Models and Portfolio Construction [Introduction]</a>
+							<span class="post-date">September 6, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/30/foreign-exchange-part-3-non-linear-models/">Foreign Exchange [Part 3 : Non-Linear Models]</a>
+							<span class="post-date">August 30, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/27/foreign-exchange-linear-models/">Foreign Exchange [Part 2: Linear Models]</a>
+							<span class="post-date">August 27, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/22/foreign-exchange-part-1b-google-visualisation/">Foreign Exchange [Part 1b : Google Visualisation]</a>
+							<span class="post-date">August 22, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/20/foreign-exchange-part-1-balassa-samuelson/">Foreign Exchange [Part 1a : Balassa-Samuelson]</a>
+							<span class="post-date">August 20, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/09/animated-sp-500-tree-map/">Animated S&amp;P 500 Tree Map</a>
+							<span class="post-date">August 9, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/08/01/event-study-quantitative-easing-across-all-sectors/">Event Study &amp; Quantitative Easing [All Sectors]</a>
+							<span class="post-date">August 1, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/07/26/event-study-quantitative-easing/">Event Study &amp; Quantitative Easing [Financial Sector]</a>
+							<span class="post-date">July 26, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/07/18/periodic-table-of-investment-returns/">Periodic table of investment returns</a>
+							<span class="post-date">July 18, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/07/15/quantile-regression-dea-part-ii/">Quantile Regression &amp; DEA [Part II]</a>
+							<span class="post-date">July 15, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/07/14/quantile-regression-dea-part-i/">Quantile Regression &amp; DEA [Part I]</a>
+							<span class="post-date">July 14, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/25/joint-distribution-of-stock-returns-part-ii/">Joint Distribution of Stock Returns [Part II]</a>
+							<span class="post-date">June 25, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/22/joint-distribution-of-stock-returns-part-i/">Joint Distribution Of Stock Returns [Part I]</a>
+							<span class="post-date">June 22, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/21/extreme-value-theory-application-threshold-model/">Extreme Value Theory [Application : Threshold Model]</a>
+							<span class="post-date">June 21, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/21/extreme-value-theory-application-maxima-model/">Extreme Value Theory [Application: Maxima Model]</a>
+							<span class="post-date">June 21, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/20/extreme-value-theory-introduction/">Extreme Value Theory [Introduction]</a>
+							<span class="post-date">June 20, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/19/cluster-analysis-for-sp500-part-iii/">Cluster Analysis for S&amp;P500 [Part III]</a>
+							<span class="post-date">June 19, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/19/cluster-analysis-for-sp500-part-ii/">Cluster Analysis for S&amp;P500 [Part II]</a>
+							<span class="post-date">June 19, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2012/06/19/cluster-analysis-for-sp-500/">Cluster Analysis for S&amp;P 500 [Part I]</a>
+							<span class="post-date">June 19, 2012</span>
+						</li>
+					<li>
+				<a href="http://alphahive.wordpress.com/2011/11/24/hello-world/">Hello world!</a>
+							<span class="post-date">November 24, 2011</span>
+						</li>
+				</ul>
+		</div></aside><aside id="blog-stats-3" class="widget_blog-stats widget"><div class="widget-body"><h1>Blog Stats</h1>		<ul>
+			<li>9,597 hits</li>
+		</ul>
+		</div></aside></div><!-- .sidebar -->
+<div id="comments">
+	
+	
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://alphahive.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
 
 
-</body>
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="44d2e41964" /><input type="hidden" name="_wp_http_referer" value="/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=1" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1391188133g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='901' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1391959623" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4c98b5e93a" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="145"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->
+	</div><!-- end .middle -->
+</div><!-- end .wrapper -->
+
+<footer class="footer" role="contentinfo">
+	<p><a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>. <a href="http://theme.wordpress.com/themes/blogum/" title="Learn more about this theme">The Blogum Theme</a>. </p>
+</footer>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201406x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/alphahive.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/alphahive.wordpress.com\/wp-login.php?action=logout&_wpnonce=b61c76465d","homeURL":"http:\/\/alphahive.wordpress.com\/","postID":"901","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1390247596j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Alpha Hive ::&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="29795639"/>
+			<input type="hidden" name="source" value="http://alphahive.wordpress.com/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="6352ffb32f" /><input type="hidden" name="_wp_http_referer" value="/2013/01/12/asset-pricing-part-2-sketching-the-traditional-framework/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "alphahive.wordpress.com";
+	</script>
+	<script type="text/javascript" src="http://s.skimresources.com/js/725X1342.skimlinks.js"></script>
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/alphahive.wordpress.com\/2013\/01\/12\/asset-pricing-part-2-sketching-the-traditional-framework\/":901}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master-legacy.html?ver=20140206#ver=20140206&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??-eJyNzEEOQDAQBdALqSFt7ETCDdyAakyFamZGcHu1trH4yc/Pz4MzKrsHcUEgrsfsAwPfQYYL/Yxrijj6LhrYko+Sztjt5PKFM/hFCXqaVBxIbjXSweheo31bn5Rmq0tdaV0YU5rlAT+fO80='></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://s0.wp.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?m=1370811927g&amp;ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://s0.wp.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?m=1363304414g&amp;ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1389017300j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'29795639','v':'wpcom','tz':'1','user_id':'0','post':'901','subd':'alphahive'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdTdvUG14Q2VDQTR4LlUsLi82dU1mai9BMkV4eHdZdkVOWkIxdC58JmdHUGRzR3Faak84JnVbYy1KJSZUbVFPYTM9fHVJNC8tYltTTGRrbkN8V3BtZUNmTGslSDZGVUZ6aVJCL3VmYjRzbGk5TUNXS19RZ2Usa2NOYklWNk5CPXVIaXVVRzlFbksma1EzdWUxP0s/Ly5ua3FtOU52eUpGcFZVVHxLW2R8YzM9bU4yUlZqd0VIQkVbWj1dMFVMb1VFLC40L2hGbCxZJnd+aitTanpmbCU0LlZMNlNWai03Z2dSSVJ8cHUrQVglfndQZVdfSUIsTjMmeWx1Y2U3cl1oR2tLSm54PVldTXl1Y2RZempOSHNwZGxbaksmelR0VUcwMkxXfjA/WW94RF1tcA=='});
+addLoadEvent(function(){linktracker_init('29795639',901);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
 </html>
-                  
